@@ -1,4 +1,4 @@
-package ch08.Collection_Iterator_Interface;
+package ch08.Iterator;
 
 import java.util.ArrayList;
 import java.util.HashSet;

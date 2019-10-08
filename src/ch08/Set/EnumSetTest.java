@@ -1,4 +1,4 @@
-package ch08.Set_Collection;
+package ch08.Set;
 
 import java.util.EnumSet;
 

@@ -1,23 +1,23 @@
-package ch08.Collection_Iterator_Interface;
+package ch08.Iterator;
 
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class IteratorErrTest {
+public class IteratorTest {
     public static void main(String[] args){
         HashSet books = new HashSet();
         books.add("Java");
-        books.add("Swift");
         books.add("Kotlin");
+        books.add("Swift");
         Iterator it = books.iterator();
         while (it.hasNext()){
             String book = (String)it.next();
             System.out.println(book);
-            if(book.equals("Swift")){
-                books.remove(book);
+            if(book.equals("Kotlin")){
+                it.remove();
             }
+            book = "Test String";
         }
         System.out.println(books);
     }
-    //在执行完迭代器后，remove最后一个元素不会触发ConcurrentModificationException（fail—fast），例如remove "Kotlin"
 }

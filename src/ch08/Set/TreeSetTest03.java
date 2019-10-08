@@ -1,6 +1,5 @@
-package ch08.Set_Collection;
+package ch08.Set;
 
-import java.util.Iterator;
 import java.util.TreeSet;
 
 class S implements Comparable{

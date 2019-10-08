@@ -1,4 +1,4 @@
-package ch08.List_Collection;
+package ch08.List;
 
 import java.util.ArrayList;
 
@@ -9,6 +9,9 @@ public class ListTest03 {
         books.add("Kotlin");
         books.add("Ajax");
         books.add("Docker");
-        //books.sort(((o1, o2) -> ((String)o1));
+        books.sort(((o1, o2) -> ((String)o1).length()-((String)o2).length()));
+        System.out.println(books);
+        books.replaceAll(ele -> ((String)ele).length());
+        System.out.println(books);
     }
 }

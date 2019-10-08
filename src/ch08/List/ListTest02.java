@@ -1,4 +1,4 @@
-package ch08.List_Collection;
+package ch08.List;
 
 import java.util.ArrayList;
 

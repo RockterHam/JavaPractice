@@ -12,9 +12,9 @@ public class MapTest02 {
         System.out.println(hm);
         hm.merge("Java",4, (oldVal , param) -> (Integer)oldVal + (Integer)param);       //"Java"的value+10
         System.out.println(hm);
-        //hm.computeIfAbsent("Docker",  ->  );       //??
+        hm.computeIfAbsent("Docker", v -> ((String)v).length());       //??
         System.out.println(hm);
-        //hm.computeIfAbsent("Java", (key , value) -> (value  value));       //??
+        //hm.computeIfAbsent("Java", (key , value) -> ((Integer)value * (Integer) value));       //??
         System.out.println(hm);
     }
 }
